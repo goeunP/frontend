@@ -1,6 +1,9 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
-
-module.exports = nextConfig
+module.exports = {
+  compiler: {
+    emotion: {
+      sourceMap: true,
+      autoLabel: true,
+      labelFormat: "[local]",
+    },
+  },
+};
